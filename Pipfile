@@ -9,6 +9,7 @@ requests = "*"
 selenium = "*"
 pypdf2 = "*"
 openpyxl = "*"
+numpy = "*"
 
 [dev-packages]
 
