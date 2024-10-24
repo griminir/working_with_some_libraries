@@ -10,6 +10,7 @@ selenium = "*"
 pypdf2 = "*"
 openpyxl = "*"
 numpy = "*"
+qrcode = {extras = ["pil"], version = "*"}
 
 [dev-packages]
 
