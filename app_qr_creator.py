@@ -1,5 +1,7 @@
 import qrcode
 
+# https://pypi.org/project/qrcode/ use the install "qrcode[pil]" for the ability to create images
+
 webpage_url = input('enter a website you would like to make a qr code for: ').strip()
 img_name = input('what would you like the image to be called?: ').strip()
 
