@@ -17,9 +17,7 @@ right_number = random.randint(1, 100)
 while True:
     try:
         guess = int(input('what do you think the number is between (1-100)?: '))
-    except ValueError:
-        print('please enter a valid number')
-    else:
+
         if guess < right_number:
             print('too low')
         elif guess > right_number:
@@ -27,3 +25,5 @@ while True:
         else:
             print(f'well done correct number was {right_number}')
             break
+    except ValueError:
+        print('please enter a valid number')
