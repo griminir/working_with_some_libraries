@@ -3,11 +3,6 @@ from termcolor import colored
 PLAYER_1 = 'X'
 PLAYER_2 = 'O'
 
-board = [
-    [' ', ' ', ' '],
-    [' ', ' ', ' '],
-    [' ', ' ', ' ']
-]
 
 
 def cell(mark):
@@ -57,7 +52,7 @@ def get_position(prompt):
             print('Not a valid position')
 
 
-def get_player_move(current_player):
+def get_player_move(current_player, board):
     print(f'player {current_player}\'s turn:')
 
     while True:
@@ -72,12 +67,18 @@ def get_player_move(current_player):
 
 
 def main():
+    
+    board = [
+    [' ', ' ', ' '],
+    [' ', ' ', ' '],
+    [' ', ' ', ' ']
+]
     print_board(board)
 
     current_player = PLAYER_1
 
     while True:
-        get_player_move(current_player)
+        get_player_move(current_player, board)
 
         print_board(board)
 
