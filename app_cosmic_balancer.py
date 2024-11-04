@@ -19,7 +19,7 @@ def cosmic_wheel(choice):
         fate = random.randint(1,10)
         if fate <= 5:
             count_heads += 1
-        elif fate >=6:
+        else:
             count_tails += 1
 
         if count_heads != 0 and count_tails != 0:
