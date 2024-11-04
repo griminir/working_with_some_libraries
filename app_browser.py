@@ -33,5 +33,3 @@ follow_button.click()
 
 
 time.sleep(10)
-
-

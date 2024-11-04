@@ -4,7 +4,7 @@ import random
 ROCK = 'r'
 SCISSORS = 's'
 PAPER = 'p'
-emojis = {ROCK: '🪨', 's': '✂️', 'p': '📃'}
+emojis = {ROCK: '🪨', SCISSORS: '✂️', PAPER: '📃'}
 # made into tuple so it can not be changed as basing it on the dictonary keys so if emojis key changes so does the choices
 choices = tuple(emojis.keys())
 
